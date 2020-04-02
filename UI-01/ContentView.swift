@@ -44,7 +44,7 @@ struct ContentView: View {
             HStack {
                 VStack(spacing: 5) {
                     Text("IP").font(.headline)
-                    Picker(selection: self.$ipSelection, label: Text("Label")) {
+                    Picker(selection: self.$ipSelection, label: Text("Label-IP")) {
                         ForEach(0 ..< self.ips.count) {
                             Text(self.ips[$0]).font(.title)
                         }
